@@ -22,7 +22,7 @@ public class DocumentController {
         this.documentService = documentService;
     }
 
-    @Operation(summary = "Busca o XML de um documento fiscal pela chave de acesso")
+    @Operation(summary = "Busca o XML de um documento fiscal pelo identificador")
     @GetMapping("/xml/{document}")
     public DocumentResponse getXmlByDocument(
             @Parameter(description = "Identificador do documento fiscal. Pode ser chave de acesso NF-e, NFC-e, NFS-e, CT-e e CF-e.")
